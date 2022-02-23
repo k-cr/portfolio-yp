@@ -9,24 +9,18 @@
                     <i class="fa-solid fa-plus"></i>
                 </div>
                 <!-- Elemento EDU -->
-                <div class="border-left border-primary pt-2 pl-4 ml2">
-                    <div class="position-relative ex-me mb-4">
-                        <h5 class="text-primary">Bachiller en Economía y Administración<i class="fa-solid fa-pen-to-square"></i><i class="fa-regular fa-square-minus"></i></h5>
-                        <p class="text-muted mb-1"><strong>Colegio Provincial de Educación Secundaria N° 23</strong> <small>MARZO 2012 - DICIEMBRE 2017</small></p>
-                        <p class="text-muted">Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum itaque voluptatem sit autem ullam voluptatum earum, sint ipsam ratione incidunt accusamus optio laudantium adipisci, exercitationem nostrum fugit et aliquid animi.</p>
+                <li *ngFor="let education of educationList">
+                    <div class="border-left border-primary pt-2 pl-4 ml2">
+                        <div class="position-relative ex-me mb-4">
+                            <h5 class="text-primary">{{education.degree}}<i class="fa-solid fa-pen-to-square"></i><i class="fa-regular fa-square-minus"></i></h5>
+                            <p class="text-muted mb-1"><strong>{{education.school}}</strong> <small>{{education.period}}</small></p>
+                            <p class="text-muted">{{education.otherInformation}}</p>
+                        </div>
                     </div>
-                </div>
-                <!-- END Elemento EDU -->
-                <!-- Elemento EDU -->
-                <div class="border-left border-primary pt-2 pl-4 ml2">
-                    <div class="position-relative ex-me mb-4">
-                        <h5 class="text-primary">Licenciatura en Sistemas<i class="fa-solid fa-pen-to-square"></i><i class="fa-regular fa-square-minus"></i></h5>
-                        <p class="text-muted mb-1"><strong>Universidad de la Patagonia Austral</strong> <small>2018 - PRESENTE</small></p>
-                        <p class="text-muted">Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum itaque voluptatem sit autem ullam voluptatum earum, sint ipsam ratione incidunt accusamus optio laudantium adipisci, exercitationem nostrum fugit et aliquid animi.</p>
-                    </div>
-                </div>
+                </li>
                 <!-- END Elemento EDU -->
             </div>
+            
             <!-- Columna -->
             <div class="col-lg-6">
                 <div class="title mb-1">
@@ -34,14 +28,15 @@
                     <i class="fa-solid fa-plus"></i>
                 </div>
             
-                <div class="border-left border-primary pt-2 pl-4 ml2">
-                    <div class="position-relative ex-me mb-4">
-                        <h5 class="text-primary">Administrador de Finanzas<i class="fa-solid fa-pen-to-square"></i><i class="fa-regular fa-square-minus"></i></h5>
-                        <p class=" text-muted mb-1"><strong>Pastas Anita</strong> <small>AGOSTO 2020 - FEBRERO 2021</small></p>
-                        <p class="text-muted">Atención al público. Diseño de publicidad para las ventas. Administrador de las finanzas del microemprendimiento y del stock del mismo
-                        </p>
+                <li *ngFor="let experience of experienceList">
+                    <div class="border-left border-primary pt-2 pl-4 ml2">
+                        <div class="position-relative ex-me mb-4">
+                            <h5 class="text-primary">{{experience.ocupation}}<i class="fa-solid fa-pen-to-square"></i><i class="fa-regular fa-square-minus"></i></h5>
+                            <p class="text-muted mb-1"><strong>{{experience.place}}</strong> <small>{{experience.period}}</small></p>
+                            <p class="text-muted">{{experience.description}}</p>
+                        </div>
                     </div>
-                </div>
+                </li>
             </div>
         </div>
     </div>

@@ -10,17 +10,17 @@
             
             <div class="mb-3" id="info-data">
                 <div>
-                    <h2>Cristian Ramos</h2>
-                    <div id="info-company">Estudiante UNPA</div>
+                    <h2>{{myPortfolio.name}}</h2>
+                    <div id="info-company">{{myPortfolio.ocupation}}</div>
                     <div id="info-contact">
-                        <span>Río Gallegos, Argentina</span>
+                        <span>{{myPortfolio.ubication}}</span>
                     </div>
                 </div>
                 <ul id="info-details">
                     <li>        
-                        <a href="#" style="text-decoration: none;">
-                            <img src="https://upload.wikimedia.org/wikipedia/commons/9/92/Logo_oficial_UNPA.jpg" alt="LogoUnpa" class="logo-unpa">
-                            <h5>Universidad Nacional de la Patagonia Austral</h5>
+                        <a href="{{myPortfolio.company.url}}" style="text-decoration: none;">
+                            <img src="{{myPortfolio.company.logo}}" alt="LogoUnpa" class="logo-unpa">
+                            <h5>{{myPortfolio.company.name}}</h5>
                         </a>
                     </li>
                 </ul>

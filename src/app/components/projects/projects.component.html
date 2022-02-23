@@ -8,17 +8,21 @@
 
         <div class="row row-cols-1 row-cols-md-3 g-4 justify-content-center">
             <!-- Elemento Proyecto -->
-            <div class="col-sm-6 col-md-6 col-xl-4">
+            
+              <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4">
+                <li *ngFor="let projects of projectList">
                 <div class="card">
                     <img src="assets/img/Proyecto1.png" class="card-img-top" alt="ImagenProyecto">
                     <div class="card-body">
-                      <h5 class="card-title justify-content-between">Proyecto Portfolio: Argentina Programa <i class="fa-solid fa-pen-to-square"></i><i class="fa-regular fa-square-minus"></i></h5>
-                      <p class="card-text">Proyecto realizado como práctica para la segunda etapa de Argentina Programa, #YoProgramo</p>
-                      <a href="https://k-cr.github.io/portfolio-unidad2-AP/" class="btn btn-primary mb-1 ms-2">Live Demo</a>
-                      <a href="https://github.com/k-cr/portfolio-unidad2-AP" class="btn btn-secondary mb-1 ms-2">Source code</a>
+                      <h5 class="card-title justify-content-between">{{projects.name}} <i class="fa-solid fa-pen-to-square"></i><i class="fa-regular fa-square-minus"></i></h5>
+                      <p class="card-text">{{projects.description}}</p>
+                      <a href="{{projects.linkLiveDemo}}" class="btn btn-primary mb-1 ms-2">Live Demo</a>
+                      <a href="{{projects.linkSourceCode}}" class="btn btn-secondary mb-1 ms-2">Source code</a>
                     </div>
                   </div>
+                </li>
             </div>
+
             <!-- END Elemento Proyecto -->
         </div>
     </div>

@@ -7,7 +7,7 @@
     "build": "ng build",
     "build:prod": "ng build --configuration production --base-href https://k-cr.github.io/portfolio-YP/",
     "watch": "ng build --watch --configuration development",
-    "test": "ng test",
+    "test": "ng test"
   },
   "private": true,
   "dependencies": {

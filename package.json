@@ -1,6 +1,6 @@
 {
   "name": "portfolio-yp",
-  "version": "1.0.0",
+  "version": "0.0.0",
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
@@ -8,7 +8,6 @@
     "build:prod": "ng build --configuration production --base-href https://k-cr.github.io/portfolio-YP/",
     "watch": "ng build --watch --configuration development",
     "test": "ng test",
-    "test:headless": "ng test --watch=false --browsers=ChromeHeadless"
   },
   "private": true,
   "dependencies": {

@@ -30,6 +30,19 @@
         "description": "Atención al público. Diseño de publicidad para las ventas. Administrador de las finanzas del microemprendimiento y del stock del mismo"
     }
     ],
+    "hardskills": [{
+
+    }],
+    "softskills": [{
+            "name": "Trabajo en equipo"
+        },
+        {
+            "name": "Aprendizaje práctico"
+        },
+        {
+            "name": "Re piola el pibe"
+        }
+    ],
     "projects": [{
         "name": "Proyecto Portfolio: Argentina Programa",
         "description": "Proyecto realizado como práctica para la segunda etapa de Argentina Programa, #YoProgramo",

@@ -40,25 +40,28 @@ i {
 }
 
 #info {
-    padding: 35px;
+    padding: 2rem; /*Padding relativo para que se ajuste al tamaño del contenedor*/
 }
 
 #info-action {
     display: flex;
+    flex-wrap: wrap; 
 }
 
-#info-details {
+/* 
+    Esto genera el overflow
+    #info-details {
     width: 300px;
     flex-shrink: 0;
-}
+} */
 
-#info-details > li {
+
+#info-details ul {
     list-style: none;
 }
 
 #info-details li a {
     color: black;
-    display: flex;
     text-decoration: none;
 }
 
@@ -68,11 +71,10 @@ i {
     margin-right: 8px;
 }
 
-#info-details li a h5 {
+#info-details li a h5{
+    display: inline-block;
     font-size: 1rem;
     font-weight: 500;
-    align-self: center;
-    vertical-align: baseline;
 }
 
 .title { 
